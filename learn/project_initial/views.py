@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.template import loader
 
 def user(request):
-    return HttpResponse("teste django")
+    template = loader.get_template('initial.html')
+    return HttpResponse(template.render())
