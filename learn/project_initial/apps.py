@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class LearningConfig(AppConfig):
+class ProjectInitialConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'learning'
+    name = 'project_initial'
